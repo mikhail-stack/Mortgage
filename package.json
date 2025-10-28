@@ -1,0 +1,19 @@
+{
+  "name": "mortgage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "postcss-pxtorem": "^6.1.0",
+    "sass": "^1.93.2",
+    "vite": "^7.1.12",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-imagemin": "^0.6.1"
+  }
+}
