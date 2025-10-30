@@ -1,0 +1,88 @@
+.buttons-cta {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 42px;
+  row-gap: 20px;
+  padding-top: 33px;
+  border-top: 1px solid #979797;
+
+  &__text {
+    display: none;
+    width: 200px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  &--with-text {
+    .buttons-cta__text {
+      display: block;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 15px;
+
+    &-primary,
+    &-secondary {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 700;
+      font-size: 16px;
+      font-style: normal;
+      line-height: normal;
+    }
+
+    &-primary {
+      justify-content: space-between;
+      gap: 10px;
+      padding: 0 29px 0 32px;
+      min-width: 200px;
+      height: 56px;
+      border-radius: 4px;
+      background: #278fb4;
+      color: #fff;
+
+      span {
+        width: 20px;
+        height: 12px;
+        background: url("/src/icons/group.svg") center center / cover no-repeat;
+      }
+    }
+
+    &-secondary {
+      justify-content: center;
+      padding: 10px;
+      border: 1px solid #342f45;
+      border-radius: 4px;
+      min-width: 181px;
+      height: 56px;
+      background: transparent;
+      color: #342f45;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .buttons-cta {
+    padding-top: 15px;
+    &__text {
+      min-width: 100%;
+    }
+    &__group {
+      min-width: 100%;
+      &-primary,
+      &-secondary {
+        min-width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -15,7 +15,51 @@
     />
   </head>
   <body>
-    <h1>Mortgage</h1>
+    <section class="promo">
+      <button class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="promo__wrapper">
+        <div class="promo__media">
+          <div class="promo__video">
+            <div class="promo__video-text">
+              Why a mortgage is so much more <br />
+              than just a rate?
+            </div>
+            <a
+              href="https://youtube.com"
+              class="play-btn play-btn--blue play-btn--duration"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <%- include('src/templates/play-btn--blue.html') %>
+              <span class="play-btn__label">0:34</span>
+            </a>
+          </div>
+        </div>
+        <div class="promo__content">
+          <a href="#" class="promo__logo-color"
+            ><img src="/src/logo/logo-color.png" alt="logo"
+          /></a>
+          <div class="promo__content-wrapper">
+            <div class="promo__info">
+              <h1 class="promo__title">
+                Finding a mortgage is so <span>much more</span> than
+                <span>just a rate</span>
+              </h1>
+              <p class="promo__text">
+                Rates change, but every mortgage journey starts with a
+                relationship. <br />
+                (Pssst...it’s not just about clicking a button)
+              </p>
+            </div>
+            <%- include('src/templates/buttons-cta.html', { withText: true }) %>
+          </div>
+        </div>
+      </div>
+    </section>
     <script type="module" src="/src/js/script.js"></script>
   </body>
 </html>

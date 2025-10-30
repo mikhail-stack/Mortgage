@@ -1,0 +1,77 @@
+.menu-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  border-radius: 4px;
+  width: 52px;
+  height: 52px;
+  margin: 24px;
+  padding: 0;
+  box-shadow: 0 5px 17px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  span {
+    width: 20px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #444;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.play-btn {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  &:active {
+    transform: scale3d(5%);
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+  &__ring {
+    transform-origin: center;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  &__circle {
+    transition: fill 0.3s ease;
+    &:hover {
+      fill: #207797;
+    }
+  }
+  &__label {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    font-size: 13px;
+    pointer-events: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
