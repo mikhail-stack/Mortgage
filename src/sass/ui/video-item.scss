@@ -1,0 +1,32 @@
+.video-item {
+  background: linear-gradient(
+      rgba(35, 123, 154, 0.62),
+      rgba(35, 123, 154, 0.62)
+    ),
+    url("/src/img/video_background.avif") center center / cover no-repeat;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+  padding-top: 44px;
+  &__text {
+    width: 290px;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    inline-size: normal;
+    text-align: center;
+    color: #fff;
+  }
+  &__time {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    inline-size: normal;
+    text-align: center;
+    color: #fff;
+  }
+}

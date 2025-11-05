@@ -29,12 +29,12 @@
               than just a rate?
             </div>
             <a
-              href="https://youtube.com"
-              class="play-btn play-btn--blue play-btn--duration"
+              href="#"
+              class="play-btn play-btn--time"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <%- include('src/templates/play-btn--blue.html') %>
+              <div class="play-btn__inner play-btn__inner--blue"></div>
               <span class="play-btn__label">0:34</span>
             </a>
           </div>
@@ -45,7 +45,7 @@
           /></a>
           <div class="promo__content-wrapper">
             <div class="promo__info">
-              <h1 class="promo__title">
+              <h1 class="title-h1 promo__title">
                 Finding a mortgage is so <span>much more</span> than
                 <span>just a rate</span>
               </h1>
@@ -57,6 +57,245 @@
             </div>
             <%- include('src/templates/buttons-cta.html', { withText: true }) %>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="persons">
+      <div class="container">
+        <h2 class="title-h2 title-h2--center">
+          Getting a mortgage funded takes a village.
+        </h2>
+        <div class="subtitle subtitle--center">
+          Well, not quite a village, but two of the villages best lending
+          heroes!
+        </div>
+        <div class="persons__wrapper">
+          <div class="persons__card">
+            <div class="persons__meet persons__meet--justin">
+              <div class="persons__meet-video">
+                <a
+                  href="#"
+                  class="play-btn play-btn--name"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="play-btn__inner play-btn__inner--blue"></div>
+                  <span class="play-btn__label">Meet Justin</span>
+                </a>
+              </div>
+            </div>
+            <div class="persons__card-wrapper">
+              <div class="persons__info">
+                <div class="persons__info-title">The master mind</div>
+                <div class="persons__info-name">Justin</div>
+                <div class="persons__info-text">
+                  Rates change, but every mortgage journey starts with a
+                  relationship. (Pssst...it’s not just about clicking a button)
+                </div>
+              </div>
+              <div class="persons__skills">
+                <div class="persons__skills-title">Skills</div>
+                <div class="persons__skills-items">
+                  <div class="persons__skills-item">
+                    <div class="persons__skills-icon">
+                      <img src="/src/icons/deals.svg" alt="deals" />
+                    </div>
+                    <div class="persons__skills-descr">Deals</div>
+                  </div>
+                  <div class="persons__skills-item">
+                    <div class="persons__skills-icon">
+                      <img src="/src/icons/compass.svg" alt="compass" />
+                    </div>
+                    <div class="persons__skills-descr">Find the right way</div>
+                  </div>
+                  <div class="persons__skills-item">
+                    <div class="persons__skills-icon">
+                      <img src="/src/icons/database.svg" alt="database" />
+                    </div>
+                    <div class="persons__skills-descr">Mortgage «database»</div>
+                  </div>
+                  <div class="persons__skills-item">
+                    <div class="persons__skills-icon">
+                      <img src="/src/icons/docs.svg" alt="docs" />
+                    </div>
+                    <div class="persons__skills-descr">Docs master</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="persons__card">
+            <div class="persons__meet persons__meet--scott">
+              <div class="persons__meet-video">
+                <a
+                  href="#"
+                  class="play-btn play-btn--name"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="play-btn__inner play-btn__inner--blue"></div>
+                  <span class="play-btn__label">Meet Scott</span>
+                </a>
+              </div>
+            </div>
+            <div class="persons__card-wrapper">
+              <div class="persons__info">
+                <div class="persons__info-title">The educator</div>
+                <div class="persons__info-name">Scott</div>
+                <div class="persons__info-text">
+                  Rates change, but every mortgage journey starts with a
+                  relationship. (Pssst...it’s not just about clicking a button)
+                </div>
+              </div>
+              <div class="persons__skills">
+                <div class="persons__skills-title">Skills</div>
+                <div class="persons__skills-items">
+                  <div class="persons__skills-item">
+                    <div class="persons__skills-icon">
+                      <img src="/src/icons/globe.svg" alt="globe" />
+                    </div>
+                    <div class="persons__skills-descr">Linguist</div>
+                  </div>
+                  <div class="persons__skills-item">
+                    <div class="persons__skills-icon">
+                      <img src="/src/icons/home.svg" alt="home" />
+                    </div>
+                    <div class="persons__skills-descr">
+                      Perfect place searcher
+                    </div>
+                  </div>
+                  <div class="persons__skills-item">
+                    <div class="persons__skills-icon">
+                      <img src="/src/icons/life-buoy.svg" alt="life-buoy" />
+                    </div>
+                    <div class="persons__skills-descr">Helper</div>
+                  </div>
+                  <div class="persons__skills-item">
+                    <div class="persons__skills-icon">
+                      <img src="/src/icons/users.svg" alt="users" />
+                    </div>
+                    <div class="persons__skills-descr">Communication Guru</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="process-steps">
+      <div class="container">
+        <h2 class="title-h2">Your mortgage journey is a story...</h2>
+        <div class="subtitle">It’s not just about clicking a button.</div>
+        <div class="process-steps__wrapper">
+          <div class="process-steps__slider">
+            <div class="swiper process-steps__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide process-steps__slide">
+                  <div class="process-steps__slide-number">01</div>
+                  <div class="process-steps__slide-name">Get positioned</div>
+                  <div class="process-steps__slide-text">
+                    Structure, pre-approval, gathering, put them into the
+                    position get the offer accepted.
+                  </div>
+                </div>
+                <div class="swiper-slide process-steps__slide">
+                  <div class="process-steps__slide-number">02</div>
+                  <div class="process-steps__slide-name">Prep the offer</div>
+                  <div class="process-steps__slide-text">
+                    Terms of your offer, how quickly you can turn things around
+                    and who your lenders is advising.
+                  </div>
+                </div>
+                <div class="swiper-slide process-steps__slide">
+                  <div class="process-steps__slide-number">03</div>
+                  <div class="process-steps__slide-name">Finalize Closing</div>
+                  <div class="process-steps__slide-text">
+                    Put the final touches on from contract to close. Close the
+                    deal.
+                  </div>
+                </div>
+                <div class="swiper-slide process-steps__slide">
+                  <div class="process-steps__slide-number">04</div>
+                  <div class="process-steps__slide-name">Finalize Closing</div>
+                  <div class="process-steps__slide-text">
+                    Put the final touches on from contract to close. Close the
+                    deal.
+                  </div>
+                </div>
+                <div class="swiper-slide process-steps__slide">
+                  <div class="process-steps__slide-number">05</div>
+                  <div class="process-steps__slide-name">Finalize Closing</div>
+                  <div class="process-steps__slide-text">
+                    Put the final touches on from contract to close. Close the
+                    deal.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="process-steps__video">
+            <div class="video-item" id="first">
+              <a
+                href="#"
+                class="play-btn play-btn--name"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="play-btn__inner play-btn__inner--white"></div>
+              </a>
+              <div class="video-item__text">
+                The difference between «fixed rate» and «adjustable»
+              </div>
+              <div class="video-item__time">0:29</div>
+            </div>
+            <div class="video-item">
+              <a
+                href="#"
+                class="play-btn play-btn--name"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="play-btn__inner play-btn__inner--white"></div>
+              </a>
+              <div class="video-item__text">What are points and credits?</div>
+              <div class="video-item__time">0:27</div>
+            </div>
+            <div class="video-item">
+              <a
+                href="#"
+                class="play-btn play-btn--name"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="play-btn__inner play-btn__inner--white"></div>
+              </a>
+              <div class="video-item__text">
+                Why a mortgage is so much more than just a rate?
+              </div>
+              <div class="video-item__time">0:34</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="question-block">
+        <div class="question-block__content">
+          <div class="question-block__content-text">
+            A mortgage isn't just about a rate. It's about building a strategy
+            to help you leverage your wealth.
+          </div>
+          <div class="question-block__content-author">
+            <div class="question-block__content-img">
+              <img src="/src/img/jastin-circle.png" alt="justin" />
+            </div>
+            <div class="question-block__content-name">Justin</div>
+          </div>
+        </div>
+        <div class="question-block__cta">
+          <div class="question-block__cta-text">Have a question?</div>
+          <button class="question-block__cta-btn">Let’s talk</button>
         </div>
       </div>
     </section>

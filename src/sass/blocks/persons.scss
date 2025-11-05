@@ -1,0 +1,237 @@
+.persons {
+  margin-top: 105px;
+  &__wrapper {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    column-gap: 64px;
+    row-gap: 50px;
+  }
+  &__card {
+    width: 512px;
+    display: flex;
+    flex-direction: column;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 28px 32px 30px 32px;
+      border-radius: 4px;
+      box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+      background: #fff;
+      flex: 1 1 auto;
+    }
+  }
+
+  &__meet {
+    position: relative;
+    display: flex;
+    height: 220px;
+    &--justin {
+      background: url("/src/img/justin.png") 35px 0 / auto no-repeat;
+    }
+    &--scott {
+      background: url("/src/img/scott.png") 8px 0 / auto no-repeat;
+    }
+
+    &-video {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      margin-right: 134px;
+    }
+  }
+
+  &__info {
+    &-title {
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #278fb4;
+    }
+    &-name {
+      position: relative;
+      margin-top: 5px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 100%;
+      color: #342f45;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #e8e8e8;
+        left: 0;
+        top: 48px;
+      }
+    }
+    &-text {
+      margin-top: 40px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      color: #000;
+      opacity: 0.5;
+    }
+  }
+  &__skills {
+    margin-top: 25px;
+    &-title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 175%;
+      color: #342f45;
+    }
+    &-items {
+      display: flex;
+      flex-wrap: wrap;
+      border-top: 1px solid #e8e8e8;
+      column-gap: 40px;
+      row-gap: 15px;
+      margin-top: 5px;
+      padding-top: 16px;
+    }
+    &-item {
+      width: 48px;
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fcfcfc;
+      border-radius: 50%;
+      border: 1px solid #e8e8e8;
+      margin: 0 auto;
+      width: 48px;
+      height: 48px;
+    }
+    &-descr {
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 127%;
+      text-align: center;
+      color: #000;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 78px;
+    }
+  }
+}
+
+.title-h2 {
+  &--center {
+    text-align: center;
+  }
+}
+
+.subtitle--center {
+  text-align: center;
+}
+.play-btn--name .play-btn__label {
+  margin-left: 16px;
+  color: #000;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .persons {
+    &__meet {
+      &-video {
+        margin-right: 100px;
+      }
+    }
+    &__wrapper {
+      column-gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .persons {
+    &__meet {
+      &-video {
+        margin-right: 134px;
+      }
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+    &__card {
+      width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .persons {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .persons {
+    margin-top: 80px;
+    &__wrapper {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .persons {
+    &__meet {
+      height: 160px;
+      &--justin {
+        background: url("/src/img/justin.png") 20px 0 / 70% auto no-repeat;
+      }
+      &--scott {
+        background: url("/src/img/scott.png") 8px 0 / 70% auto no-repeat;
+      }
+      &-video {
+        margin-right: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .persons {
+    margin-top: 70px;
+    &__meet {
+      &--justin {
+        background: url("/src/img/justin.png") 20px 0 / 70% auto no-repeat;
+      }
+      &--scott {
+        background: url("/src/img/scott.png") 8px 0 / 70% auto no-repeat;
+      }
+      &-video {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .play-btn--name .play-btn__label {
+    margin-left: 10px;
+    white-space: wrap;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .persons {
+    &__skills {
+      &-items {
+        column-gap: 24px;
+      }
+    }
+    &__card {
+      &-wrapper {
+        padding: 28px 22px 30px 22px;
+      }
+    }
+  }
+}

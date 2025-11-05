@@ -1,0 +1,29 @@
+@use "/src/sass/base/mixins.scss" as *;
+
+.title-h1 {
+  @include title;
+  font-size: 48px;
+  line-height: 125%;
+}
+
+.title-h2 {
+  @include title;
+  font-size: 36px;
+  line-height: 167%;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  color: #000;
+  opacity: 0.5;
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .title-h2 {
+    line-height: 125%;
+  }
+}

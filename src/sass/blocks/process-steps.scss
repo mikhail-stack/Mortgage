@@ -1,0 +1,211 @@
+.process-steps {
+  margin-top: 105px;
+  margin-bottom: 1500px;
+  position: relative;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+    column-gap: 48px;
+  }
+  &__slider {
+    position: relative;
+    width: 396px;
+    .swiper-pagination {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 486px;
+      left: -55px;
+      width: 12px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 457px;
+        background-image: repeating-linear-gradient(
+          to bottom,
+          #ccc 0px,
+          #ccc 2px,
+          transparent 2px,
+          transparent 10px
+        );
+        left: 6px;
+        top: 12px;
+        z-index: -1;
+      }
+    }
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      width: 13px;
+      height: 13px;
+      border: 1px solid #ccc;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #278fb4;
+      width: 12px;
+      height: 12px;
+      border: none;
+      box-shadow: 0 0 0 4px rgba(39, 143, 180, 0.2);
+    }
+    .swiper-slide {
+      transition: transform 0.01s ease;
+    }
+    .swiper-slide-active {
+      background-color: #278fb4;
+      transform: translateX(16px);
+      .process-steps__slide-number {
+        color: #fff;
+        opacity: 0.5;
+      }
+      .process-steps__slide-name {
+        color: #fff;
+        &::after {
+          background-color: #fff;
+        }
+      }
+      .process-steps__slide-text {
+        color: #fff;
+        opacity: 0.7;
+      }
+    }
+  }
+  &__swiper {
+    height: 678px;
+  }
+  &__slide {
+    width: calc(100% - 16px);
+    min-height: 210px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    background: transparent;
+    padding: 28px 20px 28px 40px;
+    &-number {
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #278fb4;
+    }
+    &-name {
+      position: relative;
+      margin-top: 5px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 100%;
+      color: #342f45;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: #e8e8e8;
+        left: 0;
+        top: 48px;
+      }
+    }
+    &-text {
+      margin-top: 40px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      color: #000;
+      opacity: 0.5;
+    }
+  }
+  &__video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 436px 234px;
+    gap: 24px;
+    width: 796px;
+    height: 694px;
+
+    #first {
+      grid-column: 1/3;
+      padding-top: 146px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .process-steps {
+    &__wrapper {
+      column-gap: 20px;
+    }
+    &__slider {
+      .swiper-pagination {
+        left: -31px;
+      }
+    }
+    &__video {
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .process-steps {
+    &__video {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+      width: 550px;
+      height: 678px;
+      #first {
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 44px;
+      }
+    }
+    &__slide {
+      padding: 28px 20px 28px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .process-steps {
+    margin-top: 80px;
+    &__wrapper {
+      flex-wrap: wrap;
+      margin-top: 29px;
+      gap: 48px;
+    }
+    &__swiper {
+      height: auto;
+    }
+    &__slider {
+      width: 100%;
+    }
+    &__slide {
+      width: 100%;
+    }
+    .swiper-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .swiper-slide {
+      height: auto;
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+    &__video {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+      width: 100%;
+      height: 678px;
+      #first {
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 44px;
+      }
+    }
+  }
+}
