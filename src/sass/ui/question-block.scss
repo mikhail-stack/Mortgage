@@ -8,6 +8,7 @@
   box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
   background: #fff;
   transition: right 0.7s ease;
+  z-index: 1000;
   &.visible {
     right: 50px;
   }

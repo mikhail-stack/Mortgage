@@ -68,7 +68,8 @@
     border-left-color: #278fb4;
   }
 
-  &__inner--svg::before {
+  &__inner--svg::before,
+  &__inner--arrow {
     display: none;
   }
 
@@ -111,7 +112,8 @@
     animation: pulse-white 2s infinite ease-in-out;
   }
   @media (hover: hover) {
-    &__inner--white:hover {
+    &__inner--white:hover,
+    &__inner--arrow:hover {
       background: #f0f0f0;
     }
   }
@@ -127,6 +129,13 @@
     &__inner--svg:hover {
       background: #1e7b99;
     }
+  }
+  &__inner--arrow {
+    background: #fff;
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__label {
     position: absolute;

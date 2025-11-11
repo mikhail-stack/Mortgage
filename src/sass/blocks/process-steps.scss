@@ -1,6 +1,5 @@
 .process-steps {
   margin-top: 105px;
-  margin-bottom: 1500px;
   position: relative;
   &__wrapper {
     display: flex;
@@ -11,7 +10,7 @@
   &__slider {
     position: relative;
     width: 396px;
-    .swiper-pagination {
+    .process-steps-pagination {
       display: flex;
       flex-direction: column;
       justify-content: space-between;

@@ -52,8 +52,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
-    color: #000;
-    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.5);
     font-style: normal;
   }
 }
@@ -83,11 +82,22 @@
     &__media {
       display: none;
     }
+    &__content {
+      padding-bottom: 50px;
+      background: linear-gradient(
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        url("/src/img/bitmap.avif") center center / cover no-repeat;
+    }
     &__logo-color {
       margin-left: 100px;
     }
     &__content-wrapper {
       margin: 100px 50px 0 50px;
+    }
+    &__text {
+      color: rgb(0, 0, 0);
     }
   }
 }
