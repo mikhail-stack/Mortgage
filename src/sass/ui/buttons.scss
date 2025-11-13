@@ -147,3 +147,38 @@
     pointer-events: none;
   }
 }
+
+.download-btn {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-left: 12px;
+    border-radius: 22px;
+    width: 144px;
+    height: 44px;
+    cursor: pointer;
+    background: #278fb4;
+    box-shadow: 0 0 0 8px rgba(39, 143, 180, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  &__inner:active {
+    transform: scale(0.9);
+  }
+  @media (hover: hover) {
+    &__inner:hover {
+      background: #1e7b99;
+    }
+  }
+}

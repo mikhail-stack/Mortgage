@@ -1,0 +1,107 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 342px;
+  padding: 28px 32px 32px 32px;
+  background-color: #fff;
+  box-shadow: 0 27px 58px 0 rgba(25, 78, 96, 0.14);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  &__tag {
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #278fb4;
+    @media (hover: hover) {
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  &__title {
+    margin-top: 82px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    color: #342f45;
+  }
+  &__text {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 23px;
+    width: 80%;
+    border-top: 1px solid rgba(151, 151, 151, 0.2);
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #342f45;
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  &--img {
+    background: url("/src/img/article-img.avif") center center / cover no-repeat;
+    .article__tag {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .article__title {
+      color: #fff;
+    }
+    .article__text {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .article__author {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .article__name {
+      color: #fff;
+      span {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  @media (hover: hover) {
+    &:hover {
+      background-color: #278fb4;
+      .article__tag {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .article__title {
+        color: #fff;
+      }
+      .article__text {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .article__name {
+        color: #fff;
+        span {
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
