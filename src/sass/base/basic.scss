@@ -1,3 +1,7 @@
+// * {
+//   outline: 1px solid green !important;
+// }
+
 h1,
 h2,
 h3,
@@ -37,11 +41,11 @@ img {
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #ffffff;
-  overflow-x: hidden;
 }
 
 .container {

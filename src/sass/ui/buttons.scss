@@ -182,3 +182,26 @@
     }
   }
 }
+
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 181px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.3s ease, transform 0.2s ease;
+  @media (hover: hover) {
+    &:hover {
+      background-color: #fff;
+      color: #1e7b99;
+    }
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+}
